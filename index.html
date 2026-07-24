@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Vaishuuu ♡</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="bg-hearts"></div>
+
+  <button id="musicBtn" class="music-btn" onclick="toggleMusic()">
+    ♫ Play music
+  </button>
+
+  <audio id="music" loop>
+    <source src="music.mpeg" type="audio/mpeg" />
+  </audio>
+
+  <main>
+
+    <!-- WELCOME SCREEN -->
+    <section id="welcome" class="screen active">
+
+      <div class="butterfly">🦋</div>
+
+      <p class="eyebrow">A little surprise from Sidhuu</p>
+
+      <h1>
+        For Vaishuuu<br>
+        <span>♡</span>
+      </h1>
+
+      <p class="subtitle">
+        I made a tiny little world just for you...
+      </p>
+
+      <button class="primary" onclick="startGame()">
+        Enter your surprise ✨
+      </button>
+
+    </section>
+
+
+    <!-- GAME SCREEN -->
+    <section id="game" class="screen">
+
+      <p class="eyebrow">A tiny birthday quest</p>
+
+      <h2>Catch the hearts, birthday girl 💕</h2>
+
+      <p class="subtitle">
+        Catch 5 hearts to unlock your surprise.
+      </p>
+
+      <div class="game-box">
+
+        <div id="score">
+          Hearts caught: 0 / 5
+        </div>
+
+        <div id="heartArea"></div>
+
+      </div>
+
+      <p id="gameMessage" class="game-message"></p>
+
+    </section>
+
+
+    <!-- MEMORIES SCREEN -->
+    <section id="memories" class="screen">
+
+      <p class="eyebrow">
+        Some of my favourite memories
+      </p>
+
+      <h2>Our little gallery ♡</h2>
+
+      <div class="gallery">
+
+        <img src="photo1.jpeg" alt="Memory 1">
+
+        <img src="photo2.jpeg" alt="Memory 2">
+
+        <img src="photo3.jpeg" alt="Memory 3">
+
+        <img src="photo4.jpeg" alt="Memory 4">
+
+        <img src="photo5.jpeg" alt="Memory 5">
+
+
+      </div>
+
+      <button class="primary" onclick="showLetter()">
+        Continue to your letter 💌
+      </button>
+
+    </section>
+
+
+    <!-- LETTER SCREEN -->
+    <section id="letter" class="screen">
+
+      <div class="envelope">
+        💌
+      </div>
+
+      <p class="eyebrow">
+        One last thing...
+      </p>
+
+      <h2>
+        A little letter for you
+      </h2>
+
+      <button class="primary" onclick="openLetter()">
+        Open it ♡
+      </button>
+
+    </section>
+
+
+    <!-- FINAL SCREEN -->
+    <section id="final" class="screen">
+
+      <div id="confetti"></div>
+
+      <div class="butterfly">
+        🦋
+      </div>
+
+      <p class="eyebrow">
+        Happy Birthday, Vaishuuu
+      </p>
+
+      <h1>
+        My dearest butterfly ♡
+      </h1>
+
+      <div class="letter-card">
+
+        <p>
+          Happiest birthday my dearest butterfly,
+        </p>
+
+        <p>
+          Can't wait to spend today celebrating how wonderful you are,
+          may you have a year as beautiful as you are.
+        </p>
+
+        <p class="signature">
+          — Sidhuu 💗
+        </p>
+
+      </div>
+
+      <p class="tiny">
+        No matter the distance, I hope this little surprise made you smile. ✨
+      </p>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
